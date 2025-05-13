@@ -1,3 +1,7 @@
+   <p align="left">
+   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
+   </p>
+
 ##Índice
 
 *[Título e imagen de portada](#Título-e-imagen-de-portada)
