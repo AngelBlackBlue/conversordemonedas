@@ -9,7 +9,7 @@ public class ExchangeRate {
     public rate (){
 
 
-        URI urlCreate = URI.create("https://v6.exchangerate-api.com/v6/8a494251f5c4cf938268006a/latest/USD");
+        URI urlCreate = URI.create("https://v6.exchangerate-api.com/v6/8a494251f5c4cf938268006a/pair/USD/ARS");
 
         HttpClient client = HttpClient.newBuilder()
                 .followRedirects(HttpClient.Redirect.NORMAL)
