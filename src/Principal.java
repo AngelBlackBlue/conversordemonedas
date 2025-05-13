@@ -7,7 +7,7 @@ public class Principal {
         String moneda2 = "";
 
         Scanner lectura = new Scanner(System.in);
-        
+
         ExchangeRate consulta = new ExchangeRate();
 
 
@@ -71,10 +71,10 @@ public class Principal {
                 System.out.println("Ingrese el monto a convertir");
                 double monto = Double.valueOf(lectura.nextLine());
 
-                System.out.println("Hola " + monto);
+                Conversion miConversion = consulta.conversor(moneda1,moneda2,monto);
+                System.out.println(miConversion);
 
-                ConversionRate conversionRate = consulta.conversor(moneda1,moneda2,monto);
-                System.out.println(conversionRate);
+                System.out.println();
 
             }
 

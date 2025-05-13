@@ -3,6 +3,8 @@ public class Conversion {
     private double conversionRate;
     private String baseCode;
     private String targetCode;
+    private double calculo;
+    private double monto;
 
 
     public double getConversionRate() {
@@ -29,19 +31,38 @@ public class Conversion {
         this.targetCode = targetCode;
     }
 
-    public Conversion (ConversionRate miConversionRate){
+    public double getCalculo() {
+        return calculo;
+    }
+
+    public void setCalculo(double calculo) {
+        this.calculo = calculo;
+    }
+
+    public double getMonto() {
+        return monto;
+    }
+
+    public void setMonto(double monto) {
+        this.monto = monto;
+    }
+
+    public Conversion (ConversionRate miConversionRate, double monto){
         this.conversionRate = miConversionRate.conversion_rate();
         this.baseCode = miConversionRate.base_code();
         this.targetCode = miConversionRate.target_code();
+        this.calculo =  monto *  miConversionRate.conversion_rate();
+        this.monto = monto;
+
+
     }
 
     @Override
     public String toString() {
-        return "El valor " + "tanto " +
-                "["+ baseCode + "] " +
-                "conversion=" + conversionRate +
-                "corresponde al valor final de " + "calculo " +
-                "["+ targetCode + "]";
+        return "El valor " + monto +
+                " ["+ baseCode + "] " +
+                "corresponde al valor final de " + calculo +
+                " ["+ targetCode + "]";
     }
 
 }

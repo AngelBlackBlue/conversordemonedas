@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class ExchangeRate {
 
-    public ConversionRate conversor (String moneda1, String moneda2, double monto){
+    public Conversion conversor (String moneda1, String moneda2, double monto){
 
         URI urlCreate =
                 URI.create("https://v6.exchangerate-api.com/v6/8a494251f5c4cf938268006a/pair/"+moneda1+"/"+moneda2);
@@ -25,7 +25,12 @@ public class ExchangeRate {
             HttpResponse<String> response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
 
-            return new Gson().fromJson(response.body(), ConversionRate.class);
+            ConversionRate miConversionRate = new Gson().fromJson(response.body(), ConversionRate.class);
+            Conversion miConversion = new Conversion(miConversionRate, monto);
+
+            return miConversion;
+
+
 
 
 
