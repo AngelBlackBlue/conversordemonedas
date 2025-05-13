@@ -30,38 +30,49 @@ public class Principal {
 
             switch (numero) {
                 case 1:
-                    System.out.println("Lunes");
                     moneda1 = "USD";
                     moneda2 = "ARS";
                     break;
                 case 2:
-                    System.out.println("Martes");
                     moneda1 = "ARS";
                     moneda2 = "USD";
                     break;
                 case 3:
-                    System.out.println("Miércoles");
+                    moneda1 = "USD";
+                    moneda2 = "ARS";
                     break;
                 case 4:
-                    System.out.println("Jueves");
+                    moneda1 = "ARS";
+                    moneda2 = "USD";
                     break;
                 case 5:
-                    System.out.println("Viernes");
+                    moneda1 = "USD";
+                    moneda2 = "ARS";
                     break;
                 case 6:
-                    System.out.println("Sábado");
+                    moneda1 = "ARS";
+                    moneda2 = "USD";
                     break;
                 case 7:
                     break;
                 default:
-                    System.out.println("Día inválido");
+                    System.out.println("Opción invalida");
             }
 
             if (numero == 7) {
                 System.out.println("Gracias por usar conversor de monedas");
                 break;
 
-            } 
+            }
+            if (numero > 0 && numero < 7) {
+
+                System.out.println("Ingrese el monto a convertir");
+                double monto = Double.valueOf(lectura.nextLine());
+
+                System.out.println("Hola " + monto);
+
+            }
+
 
 
         }
