@@ -25,7 +25,9 @@ public class ExchangeRate {
             HttpResponse<String> response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
 
-//            return new Gson().fromJson(response.body(), ConversionRate.class);
+            return new Gson().fromJson(response.body(), ConversionRate.class);
+
+
 
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);

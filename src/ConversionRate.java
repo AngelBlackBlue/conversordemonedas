@@ -1,4 +1,4 @@
 public record ConversionRate(
-        int conversion_rate
+        double conversion_rate
 ) {
 }

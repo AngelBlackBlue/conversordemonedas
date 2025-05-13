@@ -3,10 +3,12 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
 
-        String moneda1;
-        String moneda2;
+        String moneda1 = "";
+        String moneda2 = "";
 
         Scanner lectura = new Scanner(System.in);
+        
+        ExchangeRate consulta = new ExchangeRate();
 
 
         while (true){
@@ -70,6 +72,9 @@ public class Principal {
                 double monto = Double.valueOf(lectura.nextLine());
 
                 System.out.println("Hola " + monto);
+
+                ConversionRate conversionRate = consulta.conversor(moneda1,moneda2,monto);
+                System.out.println(conversionRate);
 
             }
 
