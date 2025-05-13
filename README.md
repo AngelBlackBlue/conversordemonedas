@@ -1,29 +1,24 @@
-   <p align="left">
-   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
-   </p>
+# Conversor de Divisas en Java 💱
 
-##Índice
+Este es un simple conversor de divisas desarrollado en Java, que utiliza la [ExchangeRate-API](https://www.exchangerate-api.com/) para obtener tasas de cambio actualizadas en tiempo real. El proyecto emplea la librería `Gson` para el manejo de datos JSON.
 
-*[Título e imagen de portada](#Título-e-imagen-de-portada)
+## 🚀 Características
 
-*[Insignias](#insignias)
+- Conversión de montos entre dos monedas diferentes.
+- Consulta en tiempo real a la API de ExchangeRate.
+- Manejo sencillo de respuestas JSON con `Gson`.
+- Código claro, comentado y fácil de extender.
 
-*[Índice](#índice)
+## 📦 Tecnologías utilizadas
 
-*[Descripción del proyecto](#descripción-del-proyecto)
+- Java 17+ (o versión compatible)
+- [Gson](https://github.com/google/gson) para deserialización JSON
+- [ExchangeRate API](https://www.exchangerate-api.com/) como fuente de datos
 
-*[Estado del proyecto](#Estado-del-proyecto)
+## 🔧 Configuración
 
-*[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
+1. **Clonar el repositorio**
 
-*[Acceso al proyecto](#acceso-proyecto)
-
-*[Tecnologías utilizadas](#tecnologías-utilizadas)
-
-*[Personas Contribuyentes](#personas-contribuyentes)
-
-*[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
-
-* [Licencia](#licencia)
-
-*[Conclusión](#conclusión)
+```bash
+git clone https://github.com/tuusuario/conversor-divisas-java.git
+cd conversor-divisas-java
