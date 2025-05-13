@@ -17,3 +17,6 @@ Este es un simple conversor de divisas desarrollado en Java, que utiliza la [Exc
 
 ## 👤 Autor
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-AngelSuarez-blue?logo=linkedin)](https://ar.linkedin.com/in/suarezangel?trk=profile-badge)
+
+| [<img src="https://avatars.githubusercontent.com/u/112484606?s=400&u=0d1eb789f0802e00c355c102d6c196995f9d03bf&v=4" width=115><br><sub>Angel Abel Suarez</sub>](https://github.com/AngelBlackBlue) | 
+| :---: | 
