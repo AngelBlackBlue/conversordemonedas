@@ -28,7 +28,7 @@ public class Principal {
                 **********************************************************
                 """);
 
-            int numero = Integer.valueOf(lectura.nextLine());
+            int numero = Integer.parseInt(lectura.nextLine());
 
             switch (numero) {
                 case 1:
@@ -41,18 +41,18 @@ public class Principal {
                     break;
                 case 3:
                     moneda1 = "USD";
-                    moneda2 = "ARS";
+                    moneda2 = "BRL";
                     break;
                 case 4:
-                    moneda1 = "ARS";
+                    moneda1 = "BRL";
                     moneda2 = "USD";
                     break;
                 case 5:
                     moneda1 = "USD";
-                    moneda2 = "ARS";
+                    moneda2 = "COP";
                     break;
                 case 6:
-                    moneda1 = "ARS";
+                    moneda1 = "COP";
                     moneda2 = "USD";
                     break;
                 case 7:
@@ -69,7 +69,7 @@ public class Principal {
             if (numero > 0 && numero < 7) {
 
                 System.out.println("Ingrese el monto a convertir");
-                double monto = Double.valueOf(lectura.nextLine());
+                double monto = Double.parseDouble(lectura.nextLine());
 
                 Conversion miConversion = consulta.conversor(moneda1,moneda2,monto);
                 System.out.println(miConversion);
